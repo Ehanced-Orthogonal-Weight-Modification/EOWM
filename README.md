@@ -1,6 +1,6 @@
 ### Enhanced Orthogonal Weights Modicifation (EOWM)
 
-This project is the implementation of Defeating Catastrophic Forgetting via Enhanced Orthogonal Weights Modification in Shuffled MNIST and CIFAR-100 setting.
+This project is the implementation of Defeating Catastrophic Forgetting via Enhanced Orthogonal Weights Modification in Shuffled MNIST, CIFAR-10 and CIFAR-100 setting.
 
 #### Shuffled MNIST
 
@@ -25,7 +25,7 @@ To train and test the model, run the main script `run_shuffled_mnist.py` with co
 python run_shuffled_mnist.py 
 ```
 
-#### CIFAR-100
+#### CIFAR
 
 ##### Requirements
 
@@ -36,13 +36,15 @@ python run_shuffled_mnist.py
 
 ##### Explanations
 
-`cifar_eowm.py` defines the networks' structure.
+`cnn_eowm.py` defines the networks' structure.
 
 `eowm.py` is the specific implementation of EOWM. It also contains the specific implementation of training and testing.
 
-`run_cifar100.py` defines the training and testing procedure of our model.
+`run_cifar.py` defines the training and testing procedure of our model.
 
-`utils.py` loads CIFAR-100 data and defines functions utilized in `run_cifar.py`.
+`utils.py` calculates the similarity between tasks and defines functions utilized in `run_cifar.py`.
+
+`cifar.py` loads CIFAR-10 or CIFAR-100 data.
 
 ##### Running
 
